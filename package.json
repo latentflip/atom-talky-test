@@ -13,7 +13,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "simplewebrtc": "~1.1.1"
+    "simplewebrtc": "~1.1.1",
+    "space-pen": "~3.1.2"
   },
   "engines": {
     "atom": ">0.50.0"

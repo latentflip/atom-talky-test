@@ -1,14 +1,15 @@
 SimpleWebRTC = require('simplewebrtc')
+View = require('space-pen').View
+
+class Videos extends View
+    @content: ->
+        @div class: 'pane', =>
+            @div id: 'local'
+            @div id: 'remote'
 
 module.exports =
     activate: ->
-        el = document.createElement('div')
-        el.id = 'remote'
-        document.body.appendChild(el)
-
-        el = document.createElement('div')
-        el.id = 'local'
-        document.body.appendChild(el)
+        atom.workspaceView.appendToRight(new Videos)
 
         webrtc = new SimpleWebRTC
             localVideoEl: 'local',
@@ -18,6 +19,8 @@ module.exports =
         webrtc.on 'readyToCall', ->
             webrtc.joinRoom('talkytest')
             console.log('Joined')
+
+        webrtc.on '*', console.log.bind(console)
 
     deactivate: ->
 

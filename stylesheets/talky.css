@@ -1,13 +1,7 @@
 #local {
-    position: absolute;
-    top: 20px;
-    left: 20px;
 }
 
 #remote {
-    position: absolute;
-    top: 20px;
-    right: 20px;
 }
 
 #local video, #remote video {
