@@ -17,6 +17,7 @@ module.exports =
 
         webrtc.on 'readyToCall', ->
             webrtc.joinRoom('talkytest')
+            console.log('Joined')
 
     deactivate: ->
 

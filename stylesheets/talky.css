@@ -1,11 +1,15 @@
 #local {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 20px;
+    left: 20px;
 }
 
-#right {
+#remote {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 20px;
+}
+
+#local video, #remote video {
+    width: 200;
 }
