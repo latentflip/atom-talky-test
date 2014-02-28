@@ -1,0 +1,21 @@
+{
+  "name": "atom-talky",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/talky",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "activationEvents": [
+    "talky:start",
+    "talky:stop"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "simplewebrtc": "~1.1.1"
+  },
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
