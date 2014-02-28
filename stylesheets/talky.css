@@ -1,9 +1,8 @@
-#local {
-}
+#local {}
 
-#remote {
-}
+#remote {}
 
 #local video, #remote video {
     width: 200px;
+    display: block;
 }
