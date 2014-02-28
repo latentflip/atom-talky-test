@@ -17,5 +17,6 @@
   },
   "engines": {
     "atom": ">0.50.0"
-  }
+  },
+  "repository": "https://github.com/latentflip/atom-talky-test"
 }
